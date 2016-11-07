@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.Controller">
+   <children>
+      <ImageView fx:id="pic" fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@fallout.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="287.0" layoutY="32.0" text="Roll the dice!" textFill="#fbff00">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Label>
+      <Button fx:id="roll6" layoutX="69.0" layoutY="227.0" mnemonicParsing="false" onAction="#rollButton" prefHeight="55.0" prefWidth="90.0" text="Roll six sided!" />
+      <Label fx:id="die1" layoutX="14.0" layoutY="307.0" prefHeight="55.0" prefWidth="239.0" text="#1" textFill="#fff200">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="die2" layoutX="345.0" layoutY="315.0" prefHeight="38.0" prefWidth="239.0" text="#2" textFill="#eeff00">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="roll8" layoutX="176.0" layoutY="227.0" mnemonicParsing="false" onAction="#rollButton8" prefHeight="55.0" prefWidth="90.0" text="Roll 8 sided!" />
+      <Button fx:id="roll20" layoutX="402.0" layoutY="227.0" mnemonicParsing="false" onAction="#rollButton20" prefHeight="55.0" prefWidth="90.0" text="Roll 20 sided!" />
+      <Button fx:id="roll12" layoutX="294.0" layoutY="227.0" mnemonicParsing="false" onAction="#rollButton12" prefHeight="55.0" prefWidth="90.0" text="Roll 12 sided!" />
+   </children>
+</AnchorPane>
